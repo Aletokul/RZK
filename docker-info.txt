@@ -1,0 +1,21 @@
+Docker images (public on Docker Hub):
+
+Eureka server:
+https://hub.docker.com/r/aletokul/eureka-server
+
+API Gateway:
+https://hub.docker.com/r/aletokul/api-gateway
+
+Parking Lot Service:
+https://hub.docker.com/r/aletokul/parking-lot-service
+
+Reservation Service:
+https://hub.docker.com/r/aletokul/reservation-service
+
+Payment Service:
+https://hub.docker.com/r/aletokul/payment-service
+
+config-server:
+https://hub.docker.com/r/aletokul/config-server
+
+Docker Compose fajl se nalazi u root folderu projekta.
