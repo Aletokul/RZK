@@ -26,7 +26,7 @@ The system consists of:
 
 ## Project Structure
 
-RZK/
+RZK/ <br>
 ├── api-gateway
 ├── config-server
 ├── eureka-server
