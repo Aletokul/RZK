@@ -52,8 +52,8 @@ Run services in the following order:
 ## Project Status
 
 This project was developed for academic and learning purposes.
-Future improvements may include security enhancements,
-additional microservices, and database integration.
+Future improvements may include security enhancements and
+additional microservices
 
 
 
