@@ -27,10 +27,10 @@ The system consists of:
 ## Project Structure
 
 RZK/ <br>
-├── api-gateway
-├── config-server
-├── eureka-server
-├── gitrepo
+├── api-gateway <br>
+├── config-server <br>
+├── eureka-server <br>
+├── gitrepo <br>
 └── docker-compose.yml
 
 
