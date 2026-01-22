@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rzk
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  eureka-server:
+    image: aletokul/eureka-server:1.0
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    depends_on:
+      - mysql
+
+  parking-lot-service:
+    image: aletokul/parking-lot-service:1.0
+    container_name: parking-lot-service
+    depends_on:
+      - eureka-server
+      - mysql
+
+  reservation-service:
+    image: aletokul/reservation-service:1.0
+    container_name: reservation-service
+    depends_on:
+      - eureka-server
+      - mysql
+
+  payment-service:
+    image: aletokul/payment-service:1.0
+    container_name: payment-service
+    depends_on:
+      - eureka-server
+      - mysql
+
+  api-gateway:
+    image: aletokul/api-gateway:1.0
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-server
+      - parking-lot-service
+      - reservation-service
+      - payment-service
+
+volumes:
+  mysql-data:
