@@ -1,8 +1,0 @@
-package com.example.paymentservice.model;
-
-public enum PaymentStatus {
-    INITIATED,
-    SUCCESS,
-    FAILED,
-    REFUNDED
-}
