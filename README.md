@@ -41,7 +41,7 @@ RZK/
 3. Run:
    docker-compose up --build
 
-##How to run without Docker
+## How to run without Docker
 
 Run services in the following order:
 1. Config Server
