@@ -5,8 +5,8 @@ services:
     image: mysql:8
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 
-      MYSQL_DATABASE: rzk
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     ports:
       - "3307:3306"
     volumes:
@@ -54,4 +54,5 @@ services:
 
 volumes:
   mysql-data:
+
 
